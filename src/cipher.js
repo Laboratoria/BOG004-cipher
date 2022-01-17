@@ -29,6 +29,10 @@ const cipher = {
     return newWord;
   }
 
+  document.getElementById("instrucciones").addEventListener("click", ()=>{
+    window.alert("Holi");
+  });
+
   document.getElementById("button").addEventListener("click", ()=>{
     let string = document.getElementById("input-original").value;
     let offset = document.getElementById("rango").value;
