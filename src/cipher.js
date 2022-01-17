@@ -6,7 +6,7 @@ const cipher = {
     for(let i = 0; i < string.length; i++){
       let numberAscii = string.charCodeAt(i);
       let formula = ((numberAscii - 65 + offset)% 26) + 65;
-      let newWord = String.fromCharCode(formula);
+      newWord = String.fromCharCode(formula);
       arrayFrase.push(newWord);
       newWord = arrayFrase.join("");
     }
@@ -22,7 +22,7 @@ const cipher = {
       if (formula < 65) {
         formula = formula + 26;
       }
-      let newWord = String.fromCharCode(formula);
+      newWord = String.fromCharCode(formula);
       arrayFrase.push(newWord);
       newWord = arrayFrase.join("");
     }
