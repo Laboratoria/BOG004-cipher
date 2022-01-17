@@ -19,6 +19,9 @@ const cipher = {
     for(let i = 0; i < string.length; i++){
       let numberAscii = string.charCodeAt(i);
       let formula = ((numberAscii - 65 - offset)% 26) + 65;
+      if (codigo < 65) {
+        codigo = codigo + 26;
+      }
       let newWord = String.fromCharCode(formula);
       arrayFrase.push(newWord);
       newWord = arrayFrase.join("");
