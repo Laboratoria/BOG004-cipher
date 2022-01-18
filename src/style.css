@@ -1,5 +1,6 @@
 *{
     font-family: calibri, monospace;
+    text-decoration-color: aliceblue;
 }
 
 body{
@@ -7,34 +8,73 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #00001A;
 }
 
-.root {
+#root {
     align-items: center;
     justify-content: center;
-    align-items: center;
-    padding: 30px 400px;
-    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+    /*padding: 60px 500px;*/
+    width: 150vh;
+    box-shadow: 8px 8px 35px 0px rgba(248, 248, 248, 0.75);
     border-radius: 10px 100px / 120px;
+  }
+
+  #inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #logo{
+    padding: 0;
+    margin-bottom: 5px;
+    display: flex;
+    width: 85PX;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #titulo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+    padding: 0;
+  }
+
+  #inicio{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
 
   #input-original {
-    height:  300px;
-    width: 700px;
+    height:  200px;
+    width: 600px;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: row;
   }
 
-  .rango{
-    margin: 0;
-    padding: 0;
+  form#cifrador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #barra{
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: aliceblue;
   }
+
+  
 
   #botones{
       display: flex;
@@ -64,7 +104,8 @@ body{
   }
 
   .resultado{
-    border: 1px solid #C00;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
   }
 
   #texto{
@@ -73,4 +114,6 @@ body{
       align-items: center;
       text-decoration: underline overline;
       font-size: 30px;
+      text-decoration-color: aliceblue;
+      color: aliceblue;
   }
